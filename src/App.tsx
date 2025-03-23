@@ -90,7 +90,7 @@ export class App extends Component<{}, AppState> {
 
   componentWillUnmount(): void {
     if (this.nameTimerId) {
-      clearInterval(this.nameTimerId);
+      clearTimeout(this.nameTimerId);
       this.nameTimerId = null;
     }
 
